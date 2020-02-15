@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import axios from 'axios';
+
 import { Login, FormContainer, Form, InputField, Button, CreateAccount, StyledLink } from './StyledComponents';
 
 class SignIn extends Component {
@@ -14,9 +16,23 @@ class SignIn extends Component {
       [e.target.id]: e.target.value
     })
   }
+
+  signIn() {
+    axios.post('http://34.89.93.186:8080/apiv1/login', {
+      username: this.state.username,
+      password: this.state.password
+    })
+      .then(res => {
+        console.log(res.data);
+      }).catch(error => {
+        console.log(error.response)
+      })
+  }
+
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state)
+    console.log(this.state);
+    this.signIn();
   }
 
   render() {
