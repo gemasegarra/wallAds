@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import SignIn from './Components/Auth/SignIn';
 import SignUp from './Components/Auth/SignUp';
-import Footer from './Components/Footer'; 
+import Footer from './Components/Footer';
 
 import { createGlobalStyle } from 'styled-components';
 
@@ -18,14 +18,14 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
-    <GlobalStyle/>
-    <Router>
+      <GlobalStyle />
+      <Router>
         <Switch>
           <Route path='/' exact component={SignUp} />
           <Route path='/SignIn' component={SignIn} />
           <Route path='/SignUp' component={SignUp} />
         </Switch>
-      </Router>      
+      </Router>
       <Footer></Footer>
     </>
   );

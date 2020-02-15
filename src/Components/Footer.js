@@ -25,7 +25,7 @@ class Footer extends Component {
       <FooterBar>
         <p>Coded by <a href='https://github.com/gemasegarra'> Gema S.</a> | 2020</p>
       </FooterBar>
-     )
+    )
   }
 };
 

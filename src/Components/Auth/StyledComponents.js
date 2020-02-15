@@ -1,26 +1,26 @@
 import styled from 'styled-components';
 
-export const Login = styled.h1 `
+export const Login = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
 `;
 
-export const FormContainer = styled.div `
+export const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`; 
+`;
 
-export const Form = styled.form `
+export const Form = styled.form`
   border: 1px solid #db7093; 
   border-radius: 3px;
   padding: 1.2rem; 
   margin-bottom: 1rem;
-`;  
+`;
 
-export const InputField = styled.div `
+export const InputField = styled.div`
   margin: 1rem;
   label {
     margin-right:1rem;
@@ -47,13 +47,13 @@ export const Button = styled.button`
   }
 `;
 
-export const CreateAccount = styled.div `
+export const CreateAccount = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem;
 `
-export const StyledLink = styled.a `
+export const StyledLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
