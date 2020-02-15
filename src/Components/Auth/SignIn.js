@@ -21,8 +21,11 @@ class SignIn extends Component {
     axios.post('http://34.89.93.186:8080/apiv1/login', {
       username: this.state.username,
       password: this.state.password
+    }, {
+      withCredentials: true,
     })
       .then(res => {
+        console.log(res.headers);
         console.log(res.data);
       }).catch(error => {
         console.log(error.response)

@@ -4,16 +4,18 @@ import axios from 'axios';
 
 class AdList extends Component {
   state = {
-    ads: [ ]
+    ads: []
   }
   componentDidMount() {
-    axios.get('http://34.89.93.186:8080/apiv1/anuncios')
-    .then(res => {
-      console.log(res);
-      this.setState({
-        posts: res.data
-      })
+    axios.get('http://34.89.93.186:8080/apiv1/anuncios', {
+      withCredentials: true,
     })
+      .then(res => {
+        console.log(res);
+        this.setState({
+          ads: res.data
+        })
+      })
   } // not working yet. throws error 500 
   render() {
 
@@ -29,7 +31,7 @@ class AdList extends Component {
       )
     })) : (<div>No ads yet</div>)
     return (
-      
+
       <div>
         {allAds}
       </div>
