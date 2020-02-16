@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     }
-`;
+`
 
 function App() {
   return (
@@ -24,10 +24,10 @@ function App() {
       <Router>
         <Switch>
           <Route path='/' exact component={SignUp} />
-          <Route path='/SignIn' component={SignIn} />
-          <Route path='/SignUp' component={SignUp} />
-          <Route path='/AdList' component={AdList} />
-          <Route path='/AdDetail/:id' component={AdDetail} />
+          <Route path='/signin' component={SignIn} />
+          <Route path='/signup' component={SignUp} />
+          <Route path='/adlist' component={AdList} />
+          <Route path='/addetail/:id' component={AdDetail} />
         </Switch>
       </Router>
       <Footer></Footer>
