@@ -5,6 +5,7 @@ import SignIn from './Components/Auth/SignIn';
 import SignUp from './Components/Auth/SignUp';
 import AdList from './Components/Ads/AdList';
 import AdDetail from './Components/Ads/AdDetail';
+import CreateAd from './Components/Ads/CreateAd';
 import Footer from './Components/Layout/Footer';
 
 import { createGlobalStyle } from 'styled-components';
@@ -28,6 +29,7 @@ function App() {
           <Route path='/signup' component={SignUp} />
           <Route path='/adlist' component={AdList} />
           <Route path='/addetail/:id' component={AdDetail} />
+          <Route path='/createad' component={CreateAd} />
         </Switch>
       </Router>
       <Footer></Footer>
