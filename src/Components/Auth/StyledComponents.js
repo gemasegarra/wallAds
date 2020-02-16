@@ -5,20 +5,20 @@ export const Login = styled.h1`
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-`;
+`
 
 export const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const Form = styled.form`
   border: 1px solid #db7093; 
   border-radius: 3px;
   padding: 1.2rem; 
   margin-bottom: 1rem;
-`;
+`
 
 export const InputField = styled.div`
   margin: 1rem;
@@ -31,7 +31,7 @@ export const InputField = styled.div`
     outline: none;
     -webkit-appearance:none;
   }
-`;
+`
 
 export const Button = styled.button`
   display: flex;
@@ -45,7 +45,7 @@ export const Button = styled.button`
   &:hover {
     background-color: #F6F6F6;
   }
-`;
+`
 
 export const CreateAccount = styled.div`
   display: flex;
@@ -53,6 +53,7 @@ export const CreateAccount = styled.div`
   align-items: center;
   margin: 1rem;
 `
+
 export const StyledLink = styled.div`
   display: flex;
   justify-content: center;
