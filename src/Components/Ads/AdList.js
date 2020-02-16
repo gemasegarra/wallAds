@@ -4,6 +4,8 @@ import axios from 'axios';
 
 
 import { AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds } from './StyledComponents';
+import Header from '../Layout/Header';
+import GoUpButton from '../UI/BackToTopButton';
 class AdList extends Component {
   state = {
     ads: []
@@ -37,9 +39,11 @@ class AdList extends Component {
     })) : (<NoAds>No ads yet</NoAds>)
     return (
 
-      <div>
+      <>
+        <Header></Header>
         {allAds}
-      </div>
+        <GoUpButton></GoUpButton>
+      </>
     )
   }
 }
