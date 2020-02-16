@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const AdCard = styled.div`
   margin: 1rem 6rem;
+  width: 70%;
 `
 
 export const AdContent = styled.div`
-  border: 1px solid #8e3b56		;
+  border: 1px solid #8e3b56;
   padding: 1rem;
   background: #F6F6F6		
 `
