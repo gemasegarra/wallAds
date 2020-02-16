@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import axios from 'axios';
 
+
+import { AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds } from './StyledComponents';
 class AdList extends Component {
   state = {
     ads: []
@@ -22,14 +24,17 @@ class AdList extends Component {
     const { ads } = this.state;
     const allAds = ads.length ? (ads.map(ad => {
       return (
-        <div className='ad card' key={ad._id}>
-          <div className='ad content'>
-            <span className='card-title'>{ad.name}</span>
-            <p className='description'>{ad.description}</p>
-          </div>
-        </div>
+        <AdCard key={ad._id}>
+          <AdContent>
+            <CardTitle>{ad.name}</CardTitle>
+            <div>Want to {ad.type}</div>
+            <Price>{ad.price}€</Price>
+            <Picture alt='product photo' src={ad.photo}></Picture>
+            <Button>More info</Button>
+          </AdContent>
+        </AdCard>
       )
-    })) : (<div>No ads yet</div>)
+    })) : (<NoAds>No ads yet</NoAds>)
     return (
 
       <div>
