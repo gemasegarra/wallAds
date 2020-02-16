@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
 import axios from 'axios';
 
 
 import { AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds } from './StyledComponents';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
+
 class AdList extends Component {
   state = {
     ads: []
@@ -15,12 +15,12 @@ class AdList extends Component {
       withCredentials: true,
     })
       .then(res => {
-        console.log(res);
+        console.log(res.data.results);
         this.setState({
-          ads: res.data
+          ads: res.data.results
         })
       })
-  } // not working yet. throws error 500 
+  }
   render() {
 
     const { ads } = this.state;
