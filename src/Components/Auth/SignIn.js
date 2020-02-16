@@ -36,6 +36,7 @@ class SignIn extends Component {
     e.preventDefault();
     console.log(this.state);
     this.signIn();
+    this.props.history.push('/adlist');
   }
 
   render() {
