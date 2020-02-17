@@ -17,6 +17,23 @@ class CreateAd extends Component {
     }
   }
 
+  createAd() {
+    let body = {};
+    Object.keys(this.state).forEach(key => {
+      body[key] = this.state[key];
+    });
+    body.tags = body.tags.split(',')
+    axios
+    .post('http://34.89.93.186:8080/apiv1/anuncios', body,
+      {
+        withCredentials: true,
+      }).then(res => {
+        console.log(res)
+      })
+    .catch(err => {
+      console.log(err)
+    })   
+  }
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value })
   }
@@ -24,20 +41,9 @@ class CreateAd extends Component {
   handleSubmit = (e) => {
     e.preventDefault()
     console.log(this.state)
-    axios
-      .post('http://34.89.93.186:8080/apiv1/anuncios', this.state,
-        {
-          withCredentials: true,
-        }).then(res => {
-          console.log(res)
-        })
-      .catch(err => {
-        console.log(err)
-      })    
-      
-      this.props.history.push('/adlist');
+    this.createAd();
+    this.props.history.push('/adlist');
   }
-
 
   render() {
     const { name, price, description, tags, type, photo } = this.state;
@@ -56,7 +62,7 @@ class CreateAd extends Component {
             <input type='number' name='price' value={price} onChange={this.handleChange} placeholder='Price' />
           </InputField>
           <InputField>
-            <input type='text' name='description' value={description} onChange={this.handleChange} placeholder='description' />
+            <input type='text' name='description' value={description} onChange={this.handleChange} placeholder='Description' />
           </InputField>
           <InputField>
           <input type='text' name='type' value={type} onChange={this.handleChange} placeholder='buy or sell' />
