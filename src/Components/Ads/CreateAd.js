@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Header from '../Layout/Header';
+import { FormContainer, Form, InputField, Button } from '../Auth/StyledComponents';
 
 class CreateAd extends Component {
   constructor(props) {
@@ -31,7 +33,9 @@ class CreateAd extends Component {
         })
       .catch(err => {
         console.log(err)
-      })
+      })    
+      
+      this.props.history.push('/adlist');
   }
 
 
@@ -41,27 +45,31 @@ class CreateAd extends Component {
     return (
 
       <>
-        <form onSubmit={this.handleSubmit}>
-          <div>
+      <Header></Header>
+      <FormContainer>
+        <Form onSubmit={this.handleSubmit}>
+        <h1>Create a new ad:</h1>
+          <InputField>
             <input type='text' name='name' value={name} onChange={this.handleChange} placeholder='Name' />
-          </div>
-          <div>
+          </InputField>
+          <InputField>
             <input type='number' name='price' value={price} onChange={this.handleChange} placeholder='Price' />
-          </div>
-          <div>
+          </InputField>
+          <InputField>
             <input type='text' name='description' value={description} onChange={this.handleChange} placeholder='description' />
-          </div>
-          <div>
+          </InputField>
+          <InputField>
           <input type='text' name='type' value={type} onChange={this.handleChange} placeholder='buy or sell' />
-          </div>
-          <div>
+          </InputField>
+          <InputField>
             <input type='text' name='tags' value={tags} onChange={this.handleChange} placeholder='Tags' />
-          </div>
-          <div>
-            <input type='text' name='photo' value={photo} onChange={this.handleChange} />
-          </div>
-          <button type='submit'>Submit</button>
-        </form>
+          </InputField>
+          <InputField>
+            <input type='text' name='photo' value={photo} onChange={this.handleChange} placeholder='Photo' />
+          </InputField>
+          <Button type='submit'>Create!</Button>
+        </Form>
+        </FormContainer>
       </>
     )
   }
