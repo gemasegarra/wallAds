@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link, NavLink } from 'react-router-dom';
+
 
 export const HeaderBar = styled.nav`
   display: flex;
@@ -9,13 +11,6 @@ export const HeaderBar = styled.nav`
   top: 0;
   z-index: 10;
   background: #e9e9e9;
-  
-  h1 {
-    margin-right: auto;
-    margin-left: 6rem;
-    font-size: 2.5rem;
-    color: #db7093;
-  }
 
   p {
     margin-right: 6rem;
@@ -23,6 +18,28 @@ export const HeaderBar = styled.nav`
     color: black;
   }
   `
+  
+  export const StyledLink = styled(Link) `
+    margin-right: auto;
+    margin-left: 6rem;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #db7093;
+  `
+
+ export const StyledNavLink = styled(NavLink)`
+  color: #db7093;
+  font-weight: 300;
+  margin: 0 2rem;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  &:hover {
+    color: #9b4f68		;
+  }
+  &.active {
+    color: #8e3b56	;
+    border-bottom: 1px solid #8e3b56	;
+  }`
 
   export const FooterBar = styled.nav`
   display: flex;
