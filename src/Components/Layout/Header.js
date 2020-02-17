@@ -7,12 +7,12 @@ class Header extends Component {
   render() {
     return (
       <HeaderBar>
-        <StyledLink exact to='/adlist'>NodePop!</StyledLink>
+        <StyledLink to='/adlist'>NodePop!</StyledLink>
         <p>Buy and sell anything you want</p>
-        <StyledNavLink exact to="/adlist" activeClassName="active">
+        <StyledNavLink to="/adlist" activeClassName="active">
           Ad List
         </StyledNavLink>
-        <StyledNavLink exact to="/createad" activeClassName="active">
+        <StyledNavLink to="/createad" activeClassName="active">
           Create ad
         </StyledNavLink>
       </HeaderBar>
