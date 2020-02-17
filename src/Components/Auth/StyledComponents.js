@@ -11,12 +11,13 @@ export const FormContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem;
 `
 
 export const Form = styled.form`
   border: 1px solid #db7093; 
   border-radius: 3px;
-  padding: 1.2rem; 
+  padding: 3rem; 
   margin-bottom: 1rem;
 `
 
@@ -30,7 +31,7 @@ export const InputField = styled.div`
     border-bottom: 1px solid #db7093;
     outline: none;
     -webkit-appearance:none;
-  }
+  } 
 `
 
 export const Button = styled.button`
