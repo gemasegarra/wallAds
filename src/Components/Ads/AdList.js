@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import axios from 'axios';
 
 
@@ -36,7 +38,7 @@ class AdList extends Component {
           </AdContent>
         </AdCard>
       )
-    })) : (<NoAds>No ads yet</NoAds>)
+    })) : (<NoAds>You need to <Link to='/SignIn'> sign in</Link> to see our ads!</NoAds>)
     return (
 
       <>
