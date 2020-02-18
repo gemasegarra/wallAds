@@ -17,12 +17,21 @@ export const FormContainer = styled.div`
 export const Form = styled.form`
   border: 1px solid #db7093; 
   border-radius: 3px;
-  padding: 3rem; 
+  padding: 2.4rem; 
   margin-bottom: 1rem;
+  background-color: white;
+  
+  h1 {
+    color: #8e3b56;
+  }
 `
 
 export const InputField = styled.div`
-  margin: 1rem;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   label {
     margin-right:1rem;
   }
