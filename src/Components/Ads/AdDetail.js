@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { AdCard, AdContent, CardTitle, Price, Picture, Button, StyledLink } from './StyledComponents';
+import { AdCard, AdContent, CardTitle, Price, Picture, Description, Button, StyledLink } from './StyledComponents';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
 
@@ -46,7 +46,7 @@ class AdDetail extends React.Component {
           <CardTitle>{name}</CardTitle>
           <div>Want to {type}</div>
           <Price>Price: {price}€</Price>
-          <p>{description}</p>
+          <Description>Description: {description}</Description>
           <p>Tags: {tags}</p>
           <Picture alt='product photo' src={photo}></Picture>
           <StyledLink to='/adlist'>

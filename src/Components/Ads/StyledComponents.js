@@ -17,7 +17,7 @@ export const CardTitle = styled.h1`
 `
 
 export const Description = styled.p`
-`
+  font-size: 1.3rem;`
 
 export const Price = styled.p`
   font-weight: bold;
@@ -47,7 +47,7 @@ export const Button = styled.button`
 export const NoAds = styled.div`
   margin: 1rem 6rem;
 `
-export const StyledLink = styled(Link) `
+export const StyledLink = styled(Link)`
 margin-right: auto;
 margin-left: 6rem;
 font-size: 2.5rem;
