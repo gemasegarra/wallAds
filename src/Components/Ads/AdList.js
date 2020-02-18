@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-import { AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds } from './StyledComponents';
+import { AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds, StyledLink } from './StyledComponents';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
 
