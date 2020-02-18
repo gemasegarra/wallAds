@@ -32,9 +32,10 @@ class AdList extends Component {
           <AdContent>
             <CardTitle>{ad.name}</CardTitle>
             <div>Want to {ad.type}</div>
-            <Price>Price: {ad.price}€</Price>
+            <Price>{ad.price}€</Price>
             <Picture alt='product photo' src={ad.photo}></Picture>
-            <Button>More info</Button>
+            <StyledLink to={`/addetail/${ad._id}`}>
+<Button>More info</Button></StyledLink>
           </AdContent>
         </AdCard>
       )
