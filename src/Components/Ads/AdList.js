@@ -32,7 +32,7 @@ class AdList extends Component {
           <AdContent>
             <CardTitle>{ad.name}</CardTitle>
             <div>Want to {ad.type}</div>
-            <Price>{ad.price}€</Price>
+            <Price>Price: {ad.price}€</Price>
             <Picture alt='product photo' src={ad.photo}></Picture>
             <Button>More info</Button>
           </AdContent>
