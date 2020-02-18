@@ -9,7 +9,7 @@ class CreateAd extends Component {
     super(props)
     this.state = {
       name: '',
-      price: 0,
+      price: Number,
       description: '',
       tags: [],
       type: '',
@@ -71,7 +71,7 @@ class CreateAd extends Component {
             <input type='text' name='tags' value={tags} onChange={this.handleChange} placeholder='Tags' />
           </InputField>
           <InputField>
-            <input type='text' name='photo' value={photo} onChange={this.handleChange} placeholder='Photo' />
+            <input type='text' name='photo' value={photo} onChange={this.handleChange} placeholder='Photo link' />
           </InputField>
           <Button type='submit'>Create!</Button>
         </Form>
