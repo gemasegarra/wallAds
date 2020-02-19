@@ -1,6 +1,8 @@
 # NodePop!
 > Your app to buy and sell anything you want! 
 
+NodePop is an app that shows a list of ads loading data via a rest API, it lets the user create and edit their own ads. 
+
 ## Demo 
 
 Live version: *coming soon* 🚀
@@ -16,7 +18,12 @@ To run this project locally do the following:
 
 ## Features
 
+ *coming soon*
+
+
 ## Future improvements 
+
+ *coming soon*
 
 ## Built with 
 
