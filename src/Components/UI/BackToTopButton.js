@@ -18,20 +18,24 @@ const Arrow = styled(ArrowAltCircleUp)`
 `
 
 class GoUpButton extends Component {
-	state = {
-		hasScrolled: false
-	};
+	constructor(props) {
+		super(props)
+		this.state = {
+			hasScrolled: false
+		}
+	}
+
 
 	componentDidMount() {
 		document.addEventListener('scroll', this.onScroll)
 	};
 	onScroll = () => {
-			if (window.scrollY > 100) {
-				this.setState({ hasScrolled: true })
-			} else {
-				this.setState({ hasScrolled: false })
-			}
-		};
+		if (window.scrollY > 100) {
+			this.setState({ hasScrolled: true })
+		} else {
+			this.setState({ hasScrolled: false })
+		}
+	};
 	scrollToTop = () => {
 		window.scrollTo(0, 0);
 	}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Header from '../Layout/Header';
-import { FormContainer, Form, InputField, Button } from '../Auth/StyledComponents';
+import { FormContainer, Form, InputField, Button } from '../StyledComponents/Forms';
 
 class CreateAd extends Component {
   constructor(props) {

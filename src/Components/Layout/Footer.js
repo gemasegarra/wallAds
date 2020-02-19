@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { FooterBar } from './StyledComponents'
+import { FooterBar } from '../StyledComponents/Layout'
 class Footer extends Component {
   render() {
     return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { HeaderBar, StyledLink, StyledNavLink } from './StyledComponents'
+import { HeaderBar, StyledLink, StyledNavLink } from '../StyledComponents/Layout';
 
 
 class Header extends Component {

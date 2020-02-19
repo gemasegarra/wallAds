@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { AdCard, AdContent, CardTitle, Price, Picture, Description, Button, StyledLink } from './StyledComponents';
+import { AdCard, AdContent, CardTitle, Price, Picture, Description, Button, StyledLink } from '../StyledComponents/Ads';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
 

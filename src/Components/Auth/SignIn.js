@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 
-import { Login, FormContainer, Form, InputField, Button, CreateAccount, StyledLink } from './StyledComponents';
+import { Login, FormContainer, Form, InputField, Button, CreateAccount, StyledLink } from '../StyledComponents/Forms';
 
 class SignIn extends Component {
   state = {
