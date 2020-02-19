@@ -46,7 +46,6 @@ export const HeaderBar = styled.nav`
   justify-content: center;
   align-items: center;  
   bottom: 0;
-  position: fixed;
   width: 100%;
   height: 85px;
   background: #F6F6F6;
