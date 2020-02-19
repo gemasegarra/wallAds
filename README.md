@@ -1,7 +1,7 @@
-# NodePop!
+# WallAds!
 > Your app to buy and sell anything you want! 
 
-NodePop is an app that shows a list of ads loading data via a rest API, it lets the user create and edit their own ads. 
+WallAds! is an app that shows a list of ads loading data via a rest API, it lets the user create and edit their own ads. 
 
 ## Demo 
 

@@ -42,7 +42,7 @@ class SignIn extends Component {
   render() {
     return (
       <>
-        <Login>Sign in to NodePop</Login>
+        <Login>Sign in to WallAds</Login>
         <FormContainer>
           <Form onSubmit={this.handleSubmit}>
             <InputField>
@@ -56,7 +56,7 @@ class SignIn extends Component {
             <Button>Sign in</Button>
           </Form>
         </FormContainer>
-        <CreateAccount>New to NodePop?</CreateAccount>
+        <CreateAccount>New to WallAds?</CreateAccount>
         <StyledLink><Link to='/SignUp'> Register here</Link>.</StyledLink>
       </>
     )

@@ -43,7 +43,7 @@ class SignUp extends Component {
   render() {
     return (
       <>
-        <Login>Sign up for NodePop</Login>
+        <Login>Sign up for WallAds</Login>
         <FormContainer>
           <Form onSubmit={this.handleSubmit}>
             <InputField>
