@@ -31,7 +31,7 @@ function App() {
           <Route path='/signup' component={SignUp} />
           <Route path='/adlist' component={AdList} />
           <Route path='/addetail/:id' component={AdDetail} />
-          <Route path='/editadd/:id' component={EditAd} />
+          <Route path='/editad/:id' component={EditAd} />
           <Route path='/createad' component={CreateAd} />
         </Switch>
       </Router>
