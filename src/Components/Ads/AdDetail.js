@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { AdCard, AdContent, CardTitle, Price, Picture, Description, Button, StyledLink } from '../StyledComponents/Ads';
+import { DetailedCard, AdContent, CardTitle, Price, Picture, Description, Button, StyledLink } from '../StyledComponents/Ads';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
 
@@ -41,7 +41,7 @@ class AdDetail extends React.Component {
     return (
       <> 
       <Header></Header>
-      <AdCard key={id}>
+      <DetailedCard key={id}>
         <AdContent>
           <CardTitle>{name}</CardTitle>
           <div>Want to {type}</div>
@@ -52,7 +52,7 @@ class AdDetail extends React.Component {
           <StyledLink to='/adlist'>
 <Button>Go back to ad list</Button></StyledLink>
         </AdContent>
-      </AdCard>
+      </DetailedCard>
       <GoUpButton></GoUpButton></>
     );
     }

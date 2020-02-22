@@ -1,14 +1,32 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+export const Grid = styled.div `
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 1rem;
+  margin: auto;
+  width: 90%;
+`
+
 export const AdCard = styled.div`
-  margin: 1rem 5rem;   
+  margin: 1rem;   
+  border: 1px solid #8e3b56;
+  background: #F6F6F6;
+`
+
+export const DetailedCard = styled.div`
+  margin: 5rem;   
+  border: 1px solid #8e3b56;
+  background: #F6F6F6;
+  width: 60%;
 `
 
 export const AdContent = styled.div`
-  border: 1px solid #8e3b56;
   padding: 1rem;
-  background: #F6F6F6;
 `
 
 export const CardTitle = styled.h1`
@@ -25,8 +43,8 @@ export const Price = styled.p`
 `
 
 export const Picture = styled.img`
-  max-height: 30%;
-  max-width: 30%;
+  max-height: 60%;
+  max-width: 60%;
   margin: 0.5rem 0;
 `
 

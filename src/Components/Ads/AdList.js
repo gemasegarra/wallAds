@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-import { AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds, StyledLink } from '../StyledComponents/Ads';
+import { Grid, AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds, StyledLink } from '../StyledComponents/Ads';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
 
@@ -49,7 +49,9 @@ class AdList extends Component {
 
         <>
           <Header></Header>
+          <Grid>
           {allAds}
+          </Grid>
           <GoUpButton></GoUpButton>
         </>
       )
