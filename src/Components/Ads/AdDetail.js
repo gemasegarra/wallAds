@@ -37,7 +37,7 @@ class AdDetail extends React.Component {
 
   render() {
     const { name, price, description, tags, type, photo, id } = this.state;
-
+    const tag = tags.join(", ")
     return (
       <> 
       <Header></Header>
@@ -47,7 +47,7 @@ class AdDetail extends React.Component {
           <div>Want to {type}</div>
           <Price>Price: {price}€</Price>
           <Description>Description: {description}</Description>
-          <p>Tags: {tags}</p>
+          <p>Tags: {tag}</p>
           <Picture alt='product photo' src={photo}></Picture>
           <StyledLink to='/adlist'>
 <Button>Go back to ad list</Button></StyledLink>
@@ -55,7 +55,7 @@ class AdDetail extends React.Component {
       </AdCard>
       <GoUpButton></GoUpButton></>
     );
-  }
+    }
 }
 
 
