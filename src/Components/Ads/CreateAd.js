@@ -22,9 +22,10 @@ class CreateAd extends Component {
     Object.keys(this.state).forEach(key => {
       body[key] = this.state[key];
     });
-    body.tags = body.tags.split(',')
-    axios
-    .post('http://34.89.93.186:8080/apiv1/anuncios', body,
+    if (body.tags.length > 0) {
+      body.tags = body.tags.split(',')}    
+      
+    axios.post('http://34.89.93.186:8080/apiv1/anuncios', body,
       {
         withCredentials: true,
       }).then(res => {
