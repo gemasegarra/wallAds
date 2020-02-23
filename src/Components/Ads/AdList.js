@@ -6,7 +6,9 @@ import axios from 'axios';
 
 import { Grid, AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds, StyledLink } from '../StyledComponents/Ads';
 import Header from '../Layout/Header';
+import SearchBar from './FilterBar';
 import GoUpButton from '../UI/BackToTopButton';
+
 
 class AdList extends Component {
   constructor(props) {
@@ -33,14 +35,14 @@ class AdList extends Component {
         return (
           <AdCard key={ad._id}>
             <AdContent>
+            <Picture alt='product photo' src={ad.photo}></Picture>
               <CardTitle>{ad.name}</CardTitle>
               <div>Want to {ad.type}</div>
-              <Price>Price: {ad.price}€</Price>
-              <Picture alt='product photo' src={ad.photo}></Picture>
+              <Price>{ad.price}€</Price>
               <StyledLink to={`/addetail/${ad._id}`}>
-                <Button>More info</Button></StyledLink>
+                <Button>Details</Button></StyledLink>
               <StyledLink to={`/editad/${ad._id}`}>
-                <Button>Edit ad</Button></StyledLink>
+                <Button>Edit</Button></StyledLink>
             </AdContent>
           </AdCard>
         )
@@ -49,6 +51,7 @@ class AdList extends Component {
 
         <>
           <Header></Header>
+          <SearchBar></SearchBar>
           <Grid>
           {allAds}
           </Grid>
