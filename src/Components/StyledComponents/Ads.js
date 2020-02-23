@@ -34,6 +34,12 @@ export const CardTitle = styled.h1`
   color: #8e3b56;
 `
 
+export const Type = styled.div `
+  background-color: #eeeeee;
+  padding: 0.25rem 1rem;
+
+`
+
 export const Description = styled.p`
   font-size: 1rem;`
 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 
-import { Grid, AdCard, AdContent, CardTitle, Price, Picture, Button, NoAds, StyledLink } from '../StyledComponents/Ads';
+import { Grid, AdCard, AdContent, CardTitle, Type, Price, Picture, Button, NoAds, StyledLink } from '../StyledComponents/Ads';
 import Header from '../Layout/Header';
 import SearchBar from './FilterBar';
 import GoUpButton from '../UI/BackToTopButton';
@@ -37,7 +37,7 @@ class AdList extends Component {
             <AdContent>
             <Picture alt='product photo' src={ad.photo}></Picture>
               <CardTitle>{ad.name}</CardTitle>
-              <div>Want to {ad.type}</div>
+              <Type>Looking to {ad.type}!</Type>
               <Price>{ad.price}€</Price>
               <StyledLink to={`/addetail/${ad._id}`}>
                 <Button>Details</Button></StyledLink>
