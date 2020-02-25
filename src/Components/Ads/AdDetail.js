@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import axios from 'axios';
 import { DetailedCard, AdContent, Type, CardTitle, Price, Picture, Description, Button, StyledLink } from '../StyledComponents/Ads';
