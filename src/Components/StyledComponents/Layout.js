@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
-
 export const HeaderBar = styled.nav`
   display: flex;
   justify-content: center;
@@ -17,31 +16,32 @@ export const HeaderBar = styled.nav`
     font-size: 1.5rem;
     color: black;
   }
-  `
-  
-  export const StyledLink = styled(Link) `
+`;
+
+export const StyledLink = styled(Link)`
     margin-right: auto;
     margin-left: 6rem;
     font-size: 2.5rem;
     text-decoration: none;
     color: #db7093;
-  `
+`;
 
- export const StyledNavLink = styled(NavLink)`
+export const StyledNavLink = styled(NavLink)`
   color: #db7093;
   font-weight: 300;
   margin: 0 2rem;
   text-decoration: none;
   transition: all 0.2s linear;
   &:hover {
-    color: #9b4f68		;
+    color: #9b4f68;
   }
   &.active {
-    color: #8e3b56	;
-    border-bottom: 1px solid #8e3b56	;
-  }`
+    color: #8e3b56;
+    border-bottom: 1px solid #8e3b56;
+  }
+`;
 
-  export const FooterBar = styled.nav`
+export const FooterBar = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -57,4 +57,4 @@ export const HeaderBar = styled.nav`
   & a:visited {
     color: #db7093;
   }
-  `
+`;

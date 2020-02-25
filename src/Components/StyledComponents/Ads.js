@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const Grid = styled.div `
-
+export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -webkit-column-gap: 0.3rem;
@@ -10,43 +9,43 @@ export const Grid = styled.div `
   column-gap: 0.1rem;
   margin: auto;
   width: 90%;
-`
+`;
 
 export const AdCard = styled.div`
   margin: 5px;   
   background: white;
   border-radius: 10px;
-
-`
+`;
 
 export const DetailedCard = styled.div`
   margin: 2rem 5rem;   
   background: white;
   width: 90%;
-`
+`;
 
 export const AdContent = styled.div`
   padding: 1rem;
-`
+`;
 
 export const CardTitle = styled.h1`
   font-size: 1.3rem;
   color: #8e3b56;
-`
+`;
 
-export const Type = styled.div `
+export const Type = styled.div`
   background-color: #eeeeee;
   padding: 0.25rem 1rem;
-
-`
+  color: white; 
+`;
 
 export const Description = styled.p`
-  font-size: 1rem;`
+  font-size: 1rem;
+`;
 
 export const Price = styled.p`
   font-weight: bold;
   font-size: 1.2rem;
-`
+`;
 
 export const Picture = styled.img`
   display: block;
@@ -54,7 +53,7 @@ export const Picture = styled.img`
   max-height: auto;
   max-width: 100%;
   margin: 0.5rem 0;
-`
+`;
 
 export const Button = styled.button`
   color: #db7093;
@@ -67,15 +66,16 @@ export const Button = styled.button`
   &:hover {
     background-color: #f8e5eb;
   }
-`
+`;
 
 export const NoAds = styled.div`
   margin: 1rem 6rem;
-`
+`;
+
 export const StyledLink = styled(Link)`
 display: flex;
 margin-top: 1rem;
 font-size: 2.5rem;
 text-decoration: none;
 color: #db7093;
-`
+`;

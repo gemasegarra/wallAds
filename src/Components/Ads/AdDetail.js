@@ -1,21 +1,19 @@
 import React from 'react';
 import axios from 'axios';
-import { DetailedCard, AdContent, CardTitle, Price, Picture, Description, Button, StyledLink } from '../StyledComponents/Ads';
+import { DetailedCard, AdContent, Type, CardTitle, Price, Picture, Description, Button, StyledLink } from '../StyledComponents/Ads';
 import Header from '../Layout/Header';
 import GoUpButton from '../UI/BackToTopButton';
-
 
 class AdDetail extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       name: '',
       price: Number,
       description: '',
       tags: [],
       type: '',
-      photo: ''
+      photo: '',
     };
   }
 
@@ -26,37 +24,41 @@ class AdDetail extends React.Component {
       withCredentials: true,
     })
       .then(res => {
-
         console.log(res.data.result);
         this.setState(
-          res.data.result
-        )
-        console.log(this.state)
-      })
+          res.data.result,
+        );
+        console.log(this.state);
+      });
   }
 
   render() {
     const { name, price, description, tags, type, photo, id } = this.state;
-    const tag = tags.join(", ")
+    const tag = tags.join(', ');
     return (
-      <> 
-      <Header></Header>
-      <DetailedCard key={id}>
-        <AdContent>
-          <CardTitle>{name}</CardTitle>
-          <div>Want to {type}</div>
-          <Price>Price: {price}€</Price>
-          <Description>Description: {description}</Description>
-          <p>Tags: {tag}</p>
-          <Picture alt='product photo' src={photo}></Picture>
-          <StyledLink to='/adlist'>
-<Button>Go back to ad list</Button></StyledLink>
-        </AdContent>
-      </DetailedCard>
-      <GoUpButton></GoUpButton></>
+      <>
+        <Header />
+        <DetailedCard key={id}>
+          <AdContent>
+            <CardTitle>{name}</CardTitle>
+            <Type style={{
+              backgroundColor: type === 'buy' ? '#A6373F' : 'green',
+            }}>
+            Looking to {type}!
+            </Type>
+            <Price>Price: {price}€</Price>
+            <Description>Description: {description}</Description>
+            <p>Tags: {tag}</p>
+            <Picture alt="product photo" src={photo} />
+            <StyledLink to="/adlist">
+              <Button>Go back to ad list</Button>
+            </StyledLink>
+          </AdContent>
+        </DetailedCard>
+        <GoUpButton />
+      </>
     );
-    }
+  }
 }
-
 
 export default AdDetail;
