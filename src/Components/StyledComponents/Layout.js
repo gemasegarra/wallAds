@@ -15,6 +15,9 @@ export const HeaderBar = styled.nav`
     margin-right: 6rem;
     font-size: 1.5rem;
     color: black;
+    @media (max-width: 940px) {
+      display: none;
+    }
   }
 `;
 
