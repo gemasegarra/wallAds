@@ -35,7 +35,7 @@ function App() {
           <Route path="/createad" component={CreateAd} />
         </Switch>
       </Router>
-      <Footer/>
+      <Footer />
     </>
   );
 }
