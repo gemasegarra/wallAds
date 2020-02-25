@@ -15,7 +15,10 @@ const Arrow = styled(ArrowAltCircleUp)`
   &:hover {
     color: #8e3b56;
   }
-`
+	@media (max-width: 425px){
+		display: none;
+	}
+`;
 
 class GoUpButton extends Component {
 	constructor(props) {

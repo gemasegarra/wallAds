@@ -27,6 +27,10 @@ export const StyledLink = styled(Link)`
     font-size: 2.5rem;
     text-decoration: none;
     color: #db7093;
+    @media (max-width: 425px) {
+      margin-left: 1rem;
+      font-size: 2rem;
+    }
 `;
 
 export const StyledNavLink = styled(NavLink)`
@@ -42,6 +46,10 @@ export const StyledNavLink = styled(NavLink)`
     color: #8e3b56;
     border-bottom: 1px solid #8e3b56;
   }
+  @media (max-width: 425px) {
+      font-size: 12px;
+      margin: 0 1rem;
+    }
 `;
 
 export const FooterBar = styled.nav`

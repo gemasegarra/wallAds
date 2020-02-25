@@ -85,12 +85,18 @@ export const SearchContainer = styled.div`
   padding: 1rem;
   border-radius: 40px;
   background-color: white;
+    @media (max-width: 425px){
+      padding: 10px;    }
   input {
     width: calc(100% - 200px);
     margin-left:40px;
     padding: 5px;
     border: none;
     border-bottom: 1px solid #db7093;
+      @media (max-width: 425px){
+        width: 50%;
+        margin-left:20px;
+    }
   }
   button {
     margin-left: 20px;
@@ -101,6 +107,10 @@ export const SearchContainer = styled.div`
     color: #F6F6F6;
     cursor: pointer;
     font-size: 1rem;
+      @media (max-width: 425px){
+        padding: 3px 10px;
+        font-size: 0.5rem;
+  }
   }
 `;
 

@@ -18,9 +18,13 @@ export const AdCard = styled.div`
 `;
 
 export const DetailedCard = styled.div`
-  margin: 2rem 5rem;   
+  margin: 2rem auto;   
   background: white;
   width: 90%;
+  @media (max-width: 425px){
+      margin: 1rem auto;
+      width: 70%;
+    }
 `;
 
 export const AdContent = styled.div`
