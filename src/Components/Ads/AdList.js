@@ -99,7 +99,7 @@ class AdList extends Component {
   handleTypeChange = typeOfAd => {
     this.setState(
       { typeOfAd },
-      () => typeOfAd.value === 'buy' ? this.buyingType() : this.sellingType()
+      () => typeOfAd.value === 'buy' ? this.sellingType() : this.buyingType()
     )
   };
 
