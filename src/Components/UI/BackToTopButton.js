@@ -28,17 +28,14 @@ class GoUpButton extends Component {
 		}
 	}
 
-
 	componentDidMount() {
 		document.addEventListener('scroll', this.onScroll)
 	};
+	
 	onScroll = () => {
-		if (window.scrollY > 100) {
-			this.setState({ hasScrolled: true })
-		} else {
-			this.setState({ hasScrolled: false })
-		}
-	};
+		window.scrollY > 100 ? this.setState({ hasScrolled: true }) : this.setState({ hasScrolled: false })
+	}
+
 	scrollToTop = () => {
 		window.scrollTo(0, 0);
 	}
