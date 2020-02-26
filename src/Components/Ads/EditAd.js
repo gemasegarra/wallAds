@@ -27,7 +27,6 @@ class EditAd extends Component {
         this.setState(
           res.data.result
         )
-        console.log(this.state)
       })
   }
 
@@ -42,8 +41,7 @@ class EditAd extends Component {
     Object.keys(this.state).forEach(key => {
       body[key] = this.state[key];
     });
-    if (body.tags.length > 0) {
-     body.tags = body.tags.split(',')}
+    
      
     axios.put(`http://34.89.93.186:8080/apiv1/anuncios/${params.id}`, body, {
       withCredentials: true,

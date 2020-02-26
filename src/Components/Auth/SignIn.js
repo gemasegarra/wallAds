@@ -34,7 +34,6 @@ class SignIn extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    console.log(this.state);
     this.signIn();
     this.props.history.push('/adlist');
   }

@@ -25,11 +25,9 @@ class AdDetail extends React.Component {
       withCredentials: true,
     })
       .then(res => {
-        console.log(res.data.result);
         this.setState(
           res.data.result,
         );
-        console.log(this.state);
       });
   }
 

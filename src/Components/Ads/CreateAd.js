@@ -42,7 +42,6 @@ class CreateAd extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    console.log(this.state)
     this.createAd();
     this.props.history.push('/adlist');
   }

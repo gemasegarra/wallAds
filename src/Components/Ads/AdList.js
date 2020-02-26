@@ -43,17 +43,14 @@ class AdList extends Component {
     })
       .then(res => {
         console.log(res.data.results);
-        console.log(res.data.results[0].type);
-        console.log(typeof (res.data.results[0].type))
         this.setState({
           ads: res.data.results
         })
       })
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-    console.log(this.state.value)
+  handleChange(e) {
+    this.setState({ value: e.target.value });
   };
 
   handleTagChange = selectedTag => {
@@ -63,7 +60,6 @@ class AdList extends Component {
         withCredentials: true,
       })
         .then(res => {
-          console.log(res.data.results);
           this.setState({
             ads: res.data.results
           })
@@ -76,20 +72,17 @@ class AdList extends Component {
       withCredentials: true,
     })
       .then(res => {
-        console.log(res.data.results);
         this.setState({
           ads: res.data.results
         })
       })
   };
 
-
   sellingType() {
     axios.get('http://34.89.93.186:8080/apiv1/anuncios?venta=true', {
       withCredentials: true,
     })
       .then(res => {
-        console.log(res.data.results);
         this.setState({
           ads: res.data.results
         })
@@ -109,7 +102,6 @@ class AdList extends Component {
       withCredentials: true,
     })
       .then(res => {
-        console.log(res.data.results);
         this.setState({
           ads: res.data.results
         })
@@ -161,6 +153,9 @@ class AdList extends Component {
                 value={this.state.typeOfAd}
                 onChange={this.handleTypeChange}
                 options={type}/>
+            </SelectForm>
+            <SelectForm>
+ 
             </SelectForm>
           </SearchForm>
         </FilterContainer>
