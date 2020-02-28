@@ -1,11 +1,11 @@
 # WallAds!
 > Your app to buy and sell anything you want! 
 
-WallAds! is an app that shows a list of ads loading data via a rest API, it lets the user create and edit their own ads. 
+![img](https://github.com/gemasegarra/wallads/blob/master/public/img/walladspic.png)
 
-## Demo 
 
-Live version: *coming soon* 🚀
+WallAds! is an app that shows a list of (fake) ads loading data via a rest API and it lets users create and edit their own ads. 
+
 
 ## Installing
 
@@ -18,12 +18,26 @@ To run this project locally do the following:
 
 ## Features
 
- *coming soon*
+![img](https://github.com/gemasegarra/wallads/blob/master/public/img/func.gif)
+
+- User can create an account and sign in. After signing in, they get redirected to main page
+- Main page shows a complete list of ads loaded from the API with some info (name, photo, price and type of ad) and two buttons, one redirecting to the details of the ad and the other to the edit page, where the user can modify the ad
+- Detailed page for each ad shows more info (tags and description)
+- User can edit all ads and create new ones
+- Search bar (filters ads by name)
+- Filter bars (one that filters ads by type and the other by tags)
+- Responsive design
+
+![img](https://github.com/gemasegarra/wallads/blob/master/public/img/mob.gif)
 
 
 ## Future improvements 
 
- *coming soon*
+*coming soon*
+
+## Demo 
+
+Live version: *coming soon* 🚀
 
 ## Built with 
 
