@@ -12,8 +12,8 @@ WallAds! is an app that shows a list of (fake) ads loading data via a rest API a
 To run this project locally do the following:
 
 1. Clone the project 
-2. run `npm install` to install all the dependencies
-3. run `npm start` to start server on http://localhost:3000/
+2. Run `npm install` to install all the dependencies
+3. Run `npm start` to start server on http://localhost:3000/
 
 
 ## Features
@@ -33,7 +33,11 @@ To run this project locally do the following:
 
 ## Future improvements 
 
-*coming soon*
+- Filter ads by price range
+- Use of several filters at the same time as allowed by the API (for instance search by tag and type of ad) 
+- Design improvements
+- Accessibility improvements
+- Code refactoring 
 
 ## Demo 
 
