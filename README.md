@@ -4,7 +4,7 @@
 ![img](https://github.com/gemasegarra/wallads/blob/master/public/img/walladspic.png)
 
 
-WallAds! is an app that shows a list of (fake) ads loading data via a rest API and it lets users create and edit their own ads. 
+WallAds! is an app that shows a list of (fake) ads loading data via a REST API and it lets users create and edit their own ads. 
 
 
 ## Installing
