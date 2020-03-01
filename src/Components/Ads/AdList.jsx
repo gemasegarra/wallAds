@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
@@ -46,8 +45,10 @@ class AdList extends Component {
         this.setState({
           ads: res.data.results
         })
+       
       })
   }
+
 
   handleChange(e) {
     this.setState({ value: e.target.value });

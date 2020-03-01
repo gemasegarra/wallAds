@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
 import React, { Component } from 'react';
 import axios from 'axios';
 import { FormContainer, Form, InputField, Button } from '../StyledComponents/Forms';
