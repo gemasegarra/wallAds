@@ -31,8 +31,8 @@ class CreateAd extends Component {
       }).then(res => {
         console.log(res)
       })
-    .catch(err => {
-      console.log(err)
+    .catch(error => {
+      console.log(error)
     })   
   }
   handleChange = (e) => {
